@@ -18,7 +18,7 @@ public class BoundaryStart extends JFrame {
         titolo.setBorder(BorderFactory.createEmptyBorder(20, 10, 10, 10));
         add(titolo, BorderLayout.NORTH);
 
-        //  Pulsanti centrali
+        // Pulsanti centrali
         JButton btnLogin = new JButton("Login");
         JButton btnRegistrati = new JButton("Registrati");
 

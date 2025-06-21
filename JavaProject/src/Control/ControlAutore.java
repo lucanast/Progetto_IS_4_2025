@@ -50,7 +50,7 @@ public class ControlAutore {
             }
 
 
-            //  Validazione descrizione
+            // Validazione descrizione
             String descrizione = nuovaRicetta.getDescrizione();
 
 
@@ -80,7 +80,7 @@ public class ControlAutore {
                 // 2. Se non trovata, la creo
                 Raccolta nuova = new Raccolta();
                 nuova.setTitolo(titoloRaccolta);
-                nuova.setDescrizione(descrizioneRaccolta); // puoi chiedere descrizione all’utente se vuoi
+                nuova.setDescrizione(descrizioneRaccolta);
                 nuova.setPrivate(false);
                 nuova.setAutore(nuovaRicetta.getAutore());
 
@@ -115,7 +115,7 @@ public class ControlAutore {
 
             ProfiloDAO loader = new ProfiloDAO();
             loader.setAutoreEmail(autore.getEmail());
-            loader.caricaIdDalDB(); // Assicurati che questo metodo sia implementato
+            loader.caricaIdDalDB();
             int idProfilo = loader.getId();
 
 
@@ -191,7 +191,7 @@ public class ControlAutore {
 
     public ArrayList<Ricetta> mostraFeedDaAltriAutori(String emailUtente) {
        RicettaDAO dao = new RicettaDAO();
-       return dao.caricaRicetteDiAltriAutori(emailUtente, 5); //  massimo 5
+       return dao.caricaRicetteDiAltriAutori(emailUtente, 5); // 🔢 massimo 5
    }
     public ArrayList<Commento> getCommentiPerRicetta(int idRicetta) {
         CommentoDAO dao = new CommentoDAO();

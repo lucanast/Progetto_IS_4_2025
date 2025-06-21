@@ -26,7 +26,7 @@ public class ControlAutoreNonRegistrato {
                 throw new EmailInUso("Email già registrata: " + nuovoAutore.getEmail());
             }
 
-            // ✍ Crea e salva nuovo autore nel DB
+            //  Crea e salva nuovo autore nel DB
             AutoreDAO daoNuovo = new AutoreDAO(
                     nuovoAutore.getEmail(),
                     nuovoAutore.getPassword(),
@@ -35,7 +35,7 @@ public class ControlAutoreNonRegistrato {
             );
             daoNuovo.scriviSuDB();
 
-            //  Crea il profilo vuoto associato
+            // Crea il profilo vuoto associato
             ProfiloDAO nuovoProfiloDAO = new ProfiloDAO();
             int nuovoId = nuovoProfiloDAO.generaProfiloId();
 

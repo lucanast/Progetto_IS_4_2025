@@ -208,7 +208,7 @@ public class RicettaDAO {
                 r.setDescrizione(rs.getString("descrizione"));
                 r.setTempo(rs.getInt("tempo"));
                 r.setTag(rs.getString("tag"));
-                Autore autore = new Autore(); // crea l’autore e imposta la sua email
+                Autore autore = new Autore(); // 🆕 crea l’autore e imposta la sua email
                 autore.setEmail(rs.getString("Autori_email"));
                 r.setAutore(autore);
                 lista.add(r);

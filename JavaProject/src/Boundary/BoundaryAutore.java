@@ -161,7 +161,7 @@ public class BoundaryAutore extends JFrame {
                 JOptionPane.YES_NO_OPTION);
         boolean isPrivate = (priv == JOptionPane.YES_OPTION);
 
-        // Prepara oggetto Raccolta
+        // 📦 Prepara oggetto Raccolta
         Raccolta raccolta = new Raccolta();
         raccolta.setTitolo(titolo.trim());
         raccolta.setDescrizione(descrizione.trim());
